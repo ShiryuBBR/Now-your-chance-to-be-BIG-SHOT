@@ -29,11 +29,21 @@ p {
     margin: 0 auto;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section {
+    padding-bottom: 48px;
+}
 
 /* header */
 
 .header {
     background-color: red;
+    margin-bottom: 40px;
 }
 
 .header-title {
@@ -50,12 +60,42 @@ p {
     height: 100px;
 }
 
+/* minecraft */
+
+.minecraft-add {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.bigbro-img {
+    width: 400px;
+}
+
+.minecraft-text {
+    margin: 0;
+    max-width: 700px;
+}
+
+.minecraft-gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minecraft-gif img{
+    width: 1100px;
+    height: auto
+}
+
 /* титле */
 
-.title {
+.section-title {
     text-align: center;
     font-size: 34px;
-    padding-top: 64px   ;
+    padding-bottom: 0px;
 }
 
 /* карта */
@@ -63,7 +103,18 @@ p {
 .map {
     display: flex;
     justify-content: flex-end;
-    margin-top: 100px
+}
+
+.arrow-right-img img {
+    width: 150px;
+    height: auto;
+    margin-top: 30px
+}
+
+/* bigshot */
+
+.bigshot-container {
+    position: relative;
 }
 
 .arrow-img {
@@ -79,10 +130,15 @@ p {
     height: 250px;
 }
 
-.arrow-right-img img {
-    width: 150px;
-    height: auto;
-    margin-top: 30px
+.dollar-img {
+    position: absolute;
+    top: 0px;
+}
+
+.dollar2-img {
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
 }
 
 /* reviews */
@@ -99,4 +155,18 @@ p {
 .review-title {
     display: flex;
     align-items: center;
+}
+
+/* carousel */
+
+.carousel-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
