@@ -20,7 +20,7 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 
 .container {
@@ -98,23 +98,12 @@ ul {
     padding-bottom: 0px;
 }
 
-/* карта */
-
-.map {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.arrow-right-img img {
-    width: 150px;
-    height: auto;
-    margin-top: 30px
-}
 
 /* bigshot */
 
 .bigshot-container {
     position: relative;
+    padding-bottom: 64px;
 }
 
 .arrow-img {
@@ -139,6 +128,63 @@ ul {
     position: absolute;
     right: 0px;
     bottom: 100px;
+}
+
+
+/* buisness */
+
+.buisness {
+    background-color: red;
+    margin-bottom: 64px;
+}
+
+.buisness-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buisness-img {
+    width: 250px;
+    height: 90px;
+}
+
+.buisness-text {
+    color: black;
+}
+
+/* formats */
+
+.format-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.format-card {
+    flex-basis: 250px;
+    height: 250px;
+    background-color: green;
+    background-image: url(../images/Spamton.png);
+}
+
+.format-card {
+}
+
+/* карта */
+
+.map {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow-right-img img {
+    width: 150px;
+    height: auto;
+    margin-top: 30px
 }
 
 /* reviews */
