@@ -47,9 +47,7 @@
           <div class="arrow-img">
             <img src="./images/arrow.png" alt="arrow down" />
           </div>
-          <div class="button-img">
-            <img src="./images/panic.gif" alt="BUTTON" />
-          </div>
+          <button class="button button-panic modal-btn-open"></button>
           <img class="dollar2-img" src="./images/dollar2.gif" alt="dollar" />
         </div>
       </section>
@@ -160,5 +158,69 @@
         <p>НЕТ... ТЕМНО!</p>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="button modal-btn-close" type="button">✖</button>
+        <div class="modal-title">
+          <h1>ТВОЕ ИМЯ НА ЯЗЫКЕ ДЕЛЬТАРУН</h1>
+          <img class="name-img" src="./images/spamton-name.png" alt="name">
+        </div>
+        <form name="card-form" autocomplete="off" novalidate>
+          
+          <div class="card-block">
+            <label class="form-label" for="user-name">Номер карты</label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="0000 0000 0000 0000"
+            />
+          </div>
+
+          <div class="card-block">
+            <label class="form-label" for="date">Действительна до</label>
+            <input
+              class="form-input form-date"
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM"
+            />
+            /
+            <input
+              class="form-input form-date"
+              type="text"
+              name="year"
+              id="year"
+              placeholder="YY"
+            />
+          </div>
+
+          <div class="card-block">
+            <label class="form-label" for="user-email">Имя держателя карты</label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-email"
+              id="user-email"
+              placeholder="IVAN IVANOV"
+            />
+          </div>
+
+          <div class="card-block">
+            <label class="form-label" for="cvv">CVC2 / CVV2</label>
+            <input
+              class="form-input cvv2"
+              type="text"
+              name="cvv"
+              id="cvv"
+              placeholder="123"
+            />
+          </div>
+          <button class="button-submit" type="submit">Узнать имя</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
