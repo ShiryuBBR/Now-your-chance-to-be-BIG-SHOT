@@ -172,16 +172,30 @@ ul {
 }
 
 .format-card {
-    flex-basis: 250px;
-    height: 250px;
-    background-color: green;
-    background-image: url(../images/Spamton.png);
+    width: 380px;
+    height: 380px;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
 }
 
-.format-card {
+.buisness-title {
+    text-align: center;
+    max-width: 380px;
+}
+
+span {
+    color: yellow;
 }
 
 /* карта */
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 
 .map {
     display: flex;
@@ -192,6 +206,10 @@ ul {
     width: 150px;
     height: auto;
     margin-top: 30px
+}
+
+.map-title {
+
 }
 
 /* reviews */
@@ -208,6 +226,10 @@ ul {
 .review-title {
     display: flex;
     align-items: center;
+}
+
+.review-list {
+    padding-left: 40px;
 }
 
 /* carousel */
